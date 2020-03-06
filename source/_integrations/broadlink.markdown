@@ -34,7 +34,8 @@ remote:
   - platform: broadlink
     host: IP_ADDRESS
     mac: MAC_ADDRESS
-```
+    type: 0x5f36
+Sorry about that I'm in sleepy mode. ```
 
 {% configuration %}
 host:
@@ -45,6 +46,10 @@ mac:
   description: Device MAC address.
   required: true
   type: string
+type:
+  description: Device type
+  required: false
+  type: int
 timeout:
   description: Timeout in seconds for the connection to the device.
   required: false
